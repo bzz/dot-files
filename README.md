@@ -5,6 +5,7 @@
 ```
 brew cask install iterm2
 
+# install zsh config
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
@@ -14,8 +15,17 @@ done
 
 unlink .zshrc
 unlink .zpreztorc
+
+# install fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
 ```
 
+
+iTerm2 → preferences → profiles → colors → Color Preset: Solarized Dark
+
+iTerm2 → preferences → profiles → text: Meslo LG S for Powerline
 
 ## VIM
 
