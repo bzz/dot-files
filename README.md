@@ -36,3 +36,9 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 vim :PluginInstall
 ```
+
+## window manager
+
+```
+brew install --cask phoenix
+```
